@@ -23,4 +23,8 @@ export const localConfig = {
 			port: 6379,
 		},
 	},
+	auth: {
+		secretKey: process.env.JWT_SECRET || 'my-secret-key',
+		expirationTime: '1d',
+	},
 };
